@@ -1,4 +1,16 @@
 /* Global =============== */
+:root {
+    --black: rgba(0, 0, 0, .7);
+    --dark-blue: rgb(77, 137, 199);
+    --medium-blue: rgb(161, 207, 249);
+    --light-blue: rgb(203, 229, 254);
+    --white: rgb(235, 245, 255);
+}
+
+body {
+    background: var(--dark-blue);
+}
+
 
 /* Container =============== */
 .container {
@@ -6,13 +18,17 @@
     margin: auto;
     text-align: center;
     font-family: Arial;
+    font-weight: bold;
     font-size: 3vw;
+    color: var(--black);
 }
 
 /* Calculator =============== */
 .calculator {
-    border: 1px solid blue;
-    border-radius: 10px;
+    background: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 20px;
+    box-shadow: 8px 8px 6px var(--black);
     width: 50%;
     margin: auto;
     margin-top: 5%;
@@ -22,10 +38,12 @@
 
 /* Output =============== */
 .output {
-    border: 1px solid blue;
+    background: var(--light-blue);
+    border: 1px solid var(--light-blue);
     border-radius: 5px;
     text-align: right;
     padding: 5px;
+    padding-right: 10px;
     line-height: 2em;
 }
 
@@ -38,13 +56,27 @@
 }
 
 .button {
-    border: 1px solid blue;
-    border-radius: 2px;
+    border-radius: 5px;
     width: 20%;
-    margin-bottom: 2%;
-    line-height: 2em;
+    margin-bottom: 4%;
+    line-height: 2.5em;
+}
+
+.num {
+    background: var(--light-blue);
+    border: 1px solid var(--light-blue);
+}
+
+.operator, #clear, #delete {
+    background: var(--medium-blue);
+    border: 1px solid var(--medium-blue);
 }
 
 #clear {
     width: 47%;
+}
+
+#equals {
+    background: var(--dark-blue);
+    border: 1px solid var(--dark-blue);
 }
