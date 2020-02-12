@@ -4,6 +4,14 @@ let operator = '';
 let equals = false;
 
 $(() => {
+    $('#clear').on('click', () => {
+        num1 = '';
+        num2 = '';
+        operator = '';
+        equals = false;
+        $('.output').text('0');
+    })
+    
     $('.num').on('click', (event) => {
         if(operator === ''){
             num1 += $(event.currentTarget).text();
