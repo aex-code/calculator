@@ -11,7 +11,7 @@ $(() => {
         equals = false;
         $('.output').text('0');
     })
-    
+
     $('.num').on('click', (event) => {
         if(operator === ''){
             num1 += $(event.currentTarget).text();
@@ -22,5 +22,10 @@ $(() => {
             console.log(num2);
             $('.output').text(num2);
         }
+    })
+
+    $('.operator').on('click', (event) => {
+        operator = $(event.currentTarget).text();
+        console.log(operator);
     })
 })
