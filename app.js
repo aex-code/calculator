@@ -91,6 +91,7 @@ $(() => {
         } else if (operator === '/'){
             result = parseFloat(num1) / parseFloat(num2);
             showResult(result);
-        } 
+        }
+        equals = true;
     })
 })
