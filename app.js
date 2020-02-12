@@ -70,9 +70,11 @@ $(() => {
 
     // on click function for operator ===============
     $('.operator').on('click', (event) => {
-        operator = $(event.currentTarget).text();
-        console.log(operator);
-        $('.output').text(operator);
+        if(num1 !== ''){
+            operator = $(event.currentTarget).text();
+            console.log(operator);
+            $('.output').text(operator);
+        } 
     })
 
     // on click function for equals button ===============
