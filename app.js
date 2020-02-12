@@ -29,6 +29,7 @@ $(() => {
     $('.operator').on('click', (event) => {
         operator = $(event.currentTarget).text();
         console.log(operator);
+        $('.output').text(operator);
     })
 
     $('#equals').on('click', (event) => {
