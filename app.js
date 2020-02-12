@@ -13,6 +13,24 @@ $(() => {
         $('.output').text('0');
     })
 
+    $('#delete').on('click', () => {
+        if(num1 === '' && num2 === '' && operator === '' && equals === false){
+            $('.output').text('0');
+        } else if (num1 !== '' && operator === ''){
+            num1 = num1.slice(0, -1);
+            if (num1 === ''){
+                $('.output').text('0');
+            } else {
+                console.log(num1);
+                $('.output').text(num1);
+            }
+        } else if (num1 !== '' && operator !== '') {
+            operator = '';
+            console.log(num1);
+            $('.output').text(num1);
+        }
+    })
+
     $('.num').on('click', (event) => {
         if(operator === ''){
             num1 += $(event.currentTarget).text();
