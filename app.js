@@ -29,14 +29,12 @@ $(() => {
                 $('.output').text('0');
             // if after slice, num1 is not empty, output says num1
             } else {
-                console.log(num1);
                 $('.output').text(num1);
             }
         // if num1 and operator are only filled values, delete operator
         } else if (num1 !== '' && operator !== '' && num2 === '') {
                 operator = '';
                 // after deleting operator, output shows num1
-                console.log(num1);
                 $('.output').text(num1);
         // if num1, operator, and num2 are filled, slice num2
         } else if (num1 !== '' && operator !== '' && num2 !== ''){
@@ -46,7 +44,6 @@ $(() => {
                 $('.output').text(operator);
             // if after slice, num2 is not empty, output says num2
             } else {
-                console.log(num2);
                 $('.output').text(num2);
             }
         }
@@ -57,12 +54,10 @@ $(() => {
         // if operator is empty, concatenate to num1
         if(operator === ''){
             num1 += $(event.currentTarget).text();
-            console.log(num1);
             $('.output').text(num1);
         // if operator is full, concatenate to num2
         } else {
             num2 += $(event.currentTarget).text();
-            console.log(num2);
             $('.output').text(num2);
 
         }
@@ -72,16 +67,14 @@ $(() => {
     $('.operator').on('click', (event) => {
         if(num1 !== ''){
             operator = $(event.currentTarget).text();
-            console.log(operator);
             $('.output').text(operator);
-        } 
+        }
     })
 
     // on click function for equals button ===============
     $('#equals').on('click', (event) => {
         // for the sake of DRY code
         const showResult = (result) => {
-            console.log(result);
             $('.output').text(result);
         }
 
@@ -98,8 +91,6 @@ $(() => {
         } else if (operator === '/'){
             result = parseFloat(num1) / parseFloat(num2);
             showResult(result);
-        } else {
-            console.log(operator);
-        }
+        } 
     })
 })
