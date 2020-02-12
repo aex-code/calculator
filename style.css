@@ -80,3 +80,17 @@ body {
     background: var(--dark-blue);
     border: 1px solid var(--dark-blue);
 }
+
+/* Media query =============== */
+@media only screen and (min-width: 1000px) {
+    .calculator {
+        max-width: 475px;
+        max-height: 575px;
+        margin-top: 50px;
+        padding: 3%;
+    }
+
+    .button {
+        line-height: 1.5em;
+    }
+}
