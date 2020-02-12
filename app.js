@@ -2,6 +2,7 @@ let num1 = '';
 let num2 = '';
 let operator = '';
 let equals = false;
+let result = '';
 
 $(() => {
     $('#clear').on('click', () => {
@@ -21,6 +22,7 @@ $(() => {
             num2 += $(event.currentTarget).text();
             console.log(num2);
             $('.output').text(num2);
+
         }
     })
 
@@ -36,16 +38,16 @@ $(() => {
         }
 
         if (operator === '+'){
-            let result = parseFloat(num1) + parseFloat(num2);
+            result = parseFloat(num1) + parseFloat(num2);
             showResult(result);
         } else if (operator === '-'){
-            let result = parseFloat(num1) - parseFloat(num2);
+            result = parseFloat(num1) - parseFloat(num2);
             showResult(result);
         } else if (operator === 'x'){
-            let result = parseFloat(num1) * parseFloat(num2);
+            result = parseFloat(num1) * parseFloat(num2);
             showResult(result);
         } else if (operator === '/'){
-            let result = parseFloat(num1) / parseFloat(num2);
+            result = parseFloat(num1) / parseFloat(num2);
             showResult(result);
         }
     })
