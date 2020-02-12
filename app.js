@@ -33,11 +33,22 @@ $(() => {
                 $('.output').text(num1);
             }
         // if num1 and operator are only filled values, delete operator
-        } else if (num1 !== '' && operator !== '') {
-            operator = '';
-            // after deleting operator, output shows num1
-            console.log(num1);
-            $('.output').text(num1);
+        } else if (num1 !== '' && operator !== '' && num2 === '') {
+                operator = '';
+                // after deleting operator, output shows num1
+                console.log(num1);
+                $('.output').text(num1);
+        // if num1, operator, and num2 are filled, slice num2
+        } else if (num1 !== '' && operator !== '' && num2 !== ''){
+            num2 = num2.slice(0, -1);
+            // if after slice, num2 is empty, output says operator
+            if(num2 === ''){
+                $('.output').text(operator);
+            // if after slice, num2 is not empty, output says num2
+            } else {
+                console.log(num2);
+                $('.output').text(num2);
+            }
         }
     })
 
@@ -85,6 +96,8 @@ $(() => {
         } else if (operator === '/'){
             result = parseFloat(num1) / parseFloat(num2);
             showResult(result);
+        } else {
+            console.log(operator);
         }
     })
 })
