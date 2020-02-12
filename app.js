@@ -28,4 +28,25 @@ $(() => {
         operator = $(event.currentTarget).text();
         console.log(operator);
     })
+
+    $('#equals').on('click', (event) => {
+        const showResult = (result) => {
+            console.log(result);
+            $('.output').text(result);
+        }
+
+        if (operator === '+'){
+            let result = parseFloat(num1) + parseFloat(num2);
+            showResult(result);
+        } else if (operator === '-'){
+            let result = parseFloat(num1) - parseFloat(num2);
+            showResult(result);
+        } else if (operator === 'x'){
+            let result = parseFloat(num1) * parseFloat(num2);
+            showResult(result);
+        } else if (operator === '/'){
+            let result = parseFloat(num1) / parseFloat(num2);
+            showResult(result);
+        }
+    })
 })
