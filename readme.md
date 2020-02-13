@@ -7,7 +7,7 @@ Fully functioning, fully responsive, basic calculator. Add, subtract, multiply, 
 
 ## Author:
 
-* **Ayla Ex** - [Portfolio](https://aylaex.dev) | [GitHub](https://github.com/aylaex)
+* **Ayla Ex** - [Portfolio](https://aylaex.dev) | [GitHub](https://github.com/aylaex) | [LinkedIn](https://www.linkedin.com/in/aylaex/)
 
 ## About This Project
 The challenge for this project was to create a basic calculator using Javascript and jQuery.
