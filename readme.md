@@ -1,5 +1,5 @@
 # Calculator App
-Fully functioning, fully responsive, basic calculator. Add, subtract, multiply, or divide any two integers or floating point numbers.
+Fully functioning, fully responsive, basic calculator. Add, subtract, multiply, or divide any two integers or floating-point numbers.
 
 
 ### Live version:
@@ -10,7 +10,7 @@ Fully functioning, fully responsive, basic calculator. Add, subtract, multiply, 
 * **Ayla Ex** - [Portfolio](https://aylaex.dev) | [GitHub](https://github.com/aylaex)
 
 ## About This Project
-The challenge for this project was to create a basic calculator using Javascript and jQuery. 
+The challenge for this project was to create a basic calculator using Javascript and jQuery.
 
 ## Technologies Used:
 
@@ -21,7 +21,7 @@ The challenge for this project was to create a basic calculator using Javascript
 
 ## User Stories:
 
-* Users can add, subtract, multiply, or divide two integers or floating point numbers.
+* Users can add, subtract, multiply, or divide two integers or floating-point numbers.
 * Users can use the clear button to completely clear the calculator.
 * Users can use the delete button to delete the last digit or operator clicked.
 
@@ -37,4 +37,4 @@ The inspiration and color scheme for this calculator came from [Lindsey Thompson
 
 ## Future Updates:
 
-* Update the calculation functionality to continue an equation after the equals buttons has been pressed.
+* Update the calculation functionality to continue an equation after the equals button has been pressed.
