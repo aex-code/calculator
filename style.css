@@ -94,7 +94,7 @@ body {
 @media only screen and (min-width: 1000px) {
     .calculator {
         max-width: 475px;
-        max-height: 575px;
+        max-height: 650px;
         margin-top: 50px;
         padding: 3%;
     }
