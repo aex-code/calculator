@@ -28,7 +28,7 @@ The challenge for this project was to create a basic calculator using Javascript
 
 ## Inspiration
 
-The inspiration and color scheme for this calculator came from [Lindsey Thompson's Basic Calculator UI design](https://dribbble.com/shots/6789009-Basic-Calculator#shot-description)
+The inspiration and color scheme for this calculator came from [Lindsey Thompson's Basic Calculator UI design](https://dribbble.com/shots/6789009-Basic-Calculator)
 
 
 ## Unsolved Problems:
