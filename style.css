@@ -4,6 +4,8 @@
     --dark-blue: rgb(77, 137, 199);
     --medium-blue: rgb(161, 207, 249);
     --light-blue: rgb(203, 229, 254);
+    --light-green: rgba(124, 193, 120, .5);
+    --border-hidden: rgba(124, 193, 120, 0);
     --white: rgb(235, 245, 255);
 }
 
@@ -80,6 +82,13 @@ body {
     background: var(--dark-blue);
     border: 1px solid var(--dark-blue);
 }
+
+.button:hover, #clear:hover, #equals:hover, #delete:hover {
+    cursor: pointer;
+    background: var(--light-green);
+    border: 1px solid var(--border-hidden);
+}
+
 
 /* Media query =============== */
 @media only screen and (min-width: 1000px) {
