@@ -3,7 +3,7 @@ Fully functioning, fully responsive, basic calculator. Add, subtract, multiply, 
 
 
 ### Live version:
-* [Calculator App](https://aylaex.github.io/calculator/)
+* [Calculator App](https://aex-code.github.io/calculator/)
 
 ## Author:
 
